@@ -276,6 +276,7 @@ body { font-family: sans-serif; }
 	margin-left: 980px;
 	width: 240px;
 	height: 70px;
+	
 
 }
 
@@ -285,6 +286,7 @@ body { font-family: sans-serif; }
 	padding-top: 24px;
 	padding-left: -10px;
 	position: absolute;
+	
 
 }
 
@@ -375,23 +377,99 @@ button{
 }
 
 .grid{
-	position: absolute;
+	
 	background-color: #EEEEE8;
-	width: 850px;
+	width: 1050px;
 	height: 700px;
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 30px;
-	margin-left: 220px;
+	margin-left: 200px;
 	margin-top: 100px;
 }
 
 .blockgrid{
 
-	width: 200px;
+	width: 300px;
 	height: 250px;
-	margin-left: 6.5%;
+	margin-left: -1%;
 	margin-right: 20px;
 	margin-top: 3%;
 	border: solid 2px black;
+}
+
+.imggrid{
+	width: 296px;
+	height: 230px;
+	margin-top: -2px;
+}
+
+.titreVelos{
+	padding-left: 115px;
+	font-family: 'Slabo 27px', serif;
+}
+.titreVelos2{
+	padding-left: 85px;
+	font-family: 'Slabo 27px', serif;
+}
+
+.titreVelos3{
+	padding-left: 50px;
+	font-family: 'Slabo 27px', serif;
+}
+.titreVelos4{
+	padding-left: 80px;
+	font-family: 'Slabo 27px', serif;
+}
+.titreVelos5{
+	padding-left: 80px;
+	font-family: 'Slabo 27px', serif;
+}
+
+.footer{
+	width: 100%;
+	height: 400px;
+	background-color: black;
+	display: flex;
+	padding: 20px;
+
+}
+
+.Information{
+	width: 20%;
+	height: auto;
+	color: white;
+	margin-left: 50px;
+	padding-top: 5px;
+	padding: 10px;
+	
+
+
+}
+
+.infos{
+	width: 20%;
+	height: auto;
+	color: white;
+	margin-left: 10px;
+	padding-top: 5px;
+	padding: 10px;
+
+
+}
+
+.Produits{
+	width: 20%;
+	height: auto;
+	color: white;
+	margin-left: 70px;
+	padding: 12px;
+
+
+}
+
+.titreFooter{
+	font-size: 20px;
+	color: grey;
+	font-family: 'Slabo 27px', serif;
 }

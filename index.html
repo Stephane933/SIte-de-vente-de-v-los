@@ -2,303 +2,287 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link rel="stylesheet" href="animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <meta charset="utf-8">
-  <title>Site de vente de vélos</title>
+	<link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Site de vente de vélos</title>
 </head>
 <body>
 
-  <div class="containHeader">
-   <p class="txtHeader">Bienvenue <strong>(identifiez-vous)</strong> | votre compte</p>
+	<div class="containHeader">
+		<p class="txtHeader">Bienvenue <strong>(identifiez-vous)</strong> | votre compte</p>
 
-   <div class="Langue"><img class="imgLangue" src="http://previews.123rf.com/images/blankstock/blankstock1409/blankstock140901260/31369529-Anglais-langue-des-signes-ic-ne-FR-symbole-de-traduction-Cercle-bouton-plat-avec-ombre-Moderne-site--Banque-d'images.jpg"></div>
+		<div class="Langue"><img class="imgLangue" src="http://previews.123rf.com/images/blankstock/blankstock1409/blankstock140901260/31369529-Anglais-langue-des-signes-ic-ne-FR-symbole-de-traduction-Cercle-bouton-plat-avec-ombre-Moderne-site--Banque-d'images.jpg"></div>
 
 
-   <div class="Langue2"><img class="imgLangue2" src="http://st2.depositphotos.com/1915171/5343/v/950/depositphotos_53435703-stock-illustration-french-language-sign-icon-fr.jpg"></div>
+		<div class="Langue2"><img class="imgLangue2" src="http://st2.depositphotos.com/1915171/5343/v/950/depositphotos_53435703-stock-illustration-french-language-sign-icon-fr.jpg"></div>
 
-   <div class="recherche_p">
+		<div class="recherche_p">
 
-    <form action="/search" id="searchthis" method="get">
-      <input id="search" name="q" type="text" placeholder="Rechercher" />
-      <input id="search-btn" type="submit" value="Rechercher" />
-    </form>
+			<form action="/search" id="searchthis" method="get">
+				<input id="search" name="q" type="text" placeholder="Rechercher" />
+				<input id="search-btn" type="submit" value="Rechercher" />
+			</form>
 
-  </div>
+		</div>
 
-  <style type='text/css'>
+		<style type='text/css'>
 
-    /* Fond du gadget de la barre de recherche */
-    .recherche_p {
+			/* Fond du gadget de la barre de recherche */
+			.recherche_p {
 
-      border-style: solid;      
-      padding: 5px 9px 9px 9px; 
-      margin-left: 65%;
-      margin-top: -40px;
-      height: 20px; 
-      display: flex;
-      flex-direction: row;
-      width: 370px;
-      justify-content: space-around;
+				border-style: solid;      
+				padding: 5px 9px 9px 9px; 
+				margin-left: 65%;
+				margin-top: -40px;
+				height: 20px; 
+				display: flex;
+				flex-direction: row;
+				width: 370px;
+				justify-content: space-around;
 
-    }
+			}
 
-    /* Champ de saisie */
-    #searchthis #search {
-      background-color: #ffffff;   
-      border-style: solid;   
-      border-width: 1px;   
-      border-color: #dddddd;   
-      padding: 5px 10px 5px 10px;   
-      width: 51%;   
-      box-sizing: border-box;  
-      font-family: Lato;   
-      font-size: 12px;   
-      font-weight: normal;  
-      letter-spacing: 1px;   
-    }
+			/* Champ de saisie */
+			#searchthis #search {
+				background-color: #ffffff;   
+				border-style: solid;   
+				border-width: 1px;   
+				border-color: #dddddd;   
+				padding: 5px 10px 5px 10px;   
+				width: 51%;   
+				box-sizing: border-box;  
+				font-family: Lato;   
+				font-size: 12px;   
+				font-weight: normal;  
+				letter-spacing: 1px;   
+			}
 
-    /* Bouton valider */
-    #searchthis #search-btn {
-      background-color: #E8B960;   
-      border-style: solid;  
-      border-width: 1px;   
-      border-color: #E8B960;   
-      box-sizing: border-box;     
-      font-size: 13px;   
-      font-weight: normal;  
-      letter-spacing: 2px;    
-      text-transform: uppercase;   
-      color: #ffffff;
-      height: 20px;
-      width: 150px;
+			/* Bouton valider */
+			#searchthis #search-btn {
+				background-color: #E8B960;   
+				border-style: solid;  
+				border-width: 1px;   
+				border-color: #E8B960;   
+				box-sizing: border-box;     
+				font-size: 13px;   
+				font-weight: normal;  
+				letter-spacing: 2px;    
+				text-transform: uppercase;   
+				color: #ffffff;
+				height: 20px;
+				width: 150px;
 
-    }
+			}
 
-    /* Bouton valider quand survolé par la souris */
-    #searchthis #search-btn:hover {
-      background-color: #ffffff;   
-      color: #E8B960;   
-      cursor: pointer;
+			/* Bouton valider quand survolé par la souris */
+			#searchthis #search-btn:hover {
+				background-color: #ffffff;   
+				color: #E8B960;   
+				cursor: pointer;
 
-    }
+			}
 
-    .logo{
-      width: 300px;
-      height: 200px;
-    }
+			.logo{
+				width: 300px;
+				height: 200px;
+			}
 
-    h1{
-      font-family: 'Niconne', cursive;
-      font-size: 65px;
-      margin-left: 400px;
-      margin-top: -200px;
-    }
-    @keyframes lightSpeedIn {
-      from {
-        -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-        transform: translate3d(100%, 0, 0) skewX(-30deg);
-        opacity: 0;
-      }
+			h1{
+				font-family: 'Niconne', cursive;
+				font-size: 65px;
+				margin-left: 400px;
+				margin-top: -200px;
+			}
+			@keyframes lightSpeedIn {
+				from {
+					-webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+					transform: translate3d(100%, 0, 0) skewX(-30deg);
+					opacity: 0;
+				}
 
-      60% {
-        -webkit-transform: skewX(20deg);
-        transform: skewX(20deg);
-        opacity: 1;
-      }
+				60% {
+					-webkit-transform: skewX(20deg);
+					transform: skewX(20deg);
+					opacity: 1;
+				}
 
-      80% {
-        -webkit-transform: skewX(-5deg);
-        transform: skewX(-5deg);
-        opacity: 1;
-      }
+				80% {
+					-webkit-transform: skewX(-5deg);
+					transform: skewX(-5deg);
+					opacity: 1;
+				}
 
-      to {
-        -webkit-transform: none;
-        transform: none;
-        opacity: 1;
-      }
-    }
+				to {
+					-webkit-transform: none;
+					transform: none;
+					opacity: 1;
+				}
+			}
 
-    .lightSpeedIn {
-      -webkit-animation-name: lightSpeedIn;
-      animation-name: lightSpeedIn;
-      -webkit-animation-timing-function: ease-out;
-      animation-timing-function: ease-out;
-    }
+			.lightSpeedIn {
+				-webkit-animation-name: lightSpeedIn;
+				animation-name: lightSpeedIn;
+				-webkit-animation-timing-function: ease-out;
+				animation-timing-function: ease-out;
+			}
 
-    .Menu{
-      position: absolute;
-      margin-left: 850px;
-      margin-top: -200px;
-    }
+			.Menu{
+				position: absolute;
+				margin-left: 850px;
+				margin-top: -200px;
+			}
+		</style>
+	</div>
 
-    .bidon{
-      margin-top: 1000px;
-    }
-  </style>
+	<div class="containerBody">
+
+		<img class="logo logo-biketrippers" src="http://www.cc-paysdesherbiers.fr/medias/2015/11/logo-r-velo.png">
+		<h1 class="velotority animated  lightSpeedIn">Velotority<br>Leader du pignons</h1>
+
+	</div>
+
+	<div class="Menu">
+
+		<ul class="menu cf">
+			<li><a href="">Menu item</a>
+				<ul class="submenu">
+					<li><a href="">Submenu item</a></li>
+					<li><a href="">Submenu item</a></li>
+					<li><a href="">Submenu item</a></li>
+					<li><a href="">Submenu item</a></li>
+				</ul> 
+			</li>    
+			<li>
+
+				<a href="">Menu item</a>
+				<ul class="submenu">
+					<li><a href="">Submenu item</a></li>
+					<li><a href="">Submenu item</a></li>
+					<li><a href="">Submenu item</a></li>
+					<li><a href="">Submenu item</a></li>
+				</ul>     
+			</li>
+
+			<div class="carousel"
+			data-flickity='{ "wrapAround": true }'>
+			<div class="carousel-cell imgCarou"></div>
+			<div class="carousel-cell imgCarou1"></div>
+			<div class="carousel-cell imgCarou2"></div>
+			<div class="carousel-cell imgCarou3"></div>
+			<div class="carousel-cell imgCarou4"></div>
+		</div>
+
+
+		<div class="Categorie">
+			<p class="txtCategorie">CATEGORIES</p>
+		</div>
+		<div class="SsCategorie">
+			<ul>
+				<li><a href="#">Vélos complet</li></a><br>
+				<li><a href="#">Roues</li></a><br>
+				<li><a href="#">Piéces détachées</li></a><br>
+				<li><a href="#">Kit de piece</li></a><br>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="Carts">
+		<p class="txtCarts">CARTS</p>
+	</div>
+	<div class="deplacementBlock">
+		<div class="SsCarts">
+			<p class="txtSsCarts">Nos Produits</p><br>
+			<div class="SHIPPING">Shipping 0,00$</div><br>
+			<div class="TOTAL">TOTAL 0,00$</div><br>
+
+			<div class="btn">
+				<button>CARTS</button>
+			</div>
+
+			<div class="btn-2">
+				<button>CHECK OUT</button>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="grid">
+
+		<div class="bloc1 blockgrid"> <p class="titreVelos">Velib 225$</p><div class="containerTof"><img class="imggrid" src="http://blog.velib.paris.fr/wp-content/uploads/cache/583x380/109668_preview-bt1.jpg"> <p class="nameImg"></p></div>
+			</div>
+
+
+	<div class="bloc2 blockgrid"><p class="titreVelos2">Velos sport 2000$<span class="DeuxTxt"></span></p><div class="containerTof"><img class="imggrid" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQEgA8aihgQRrIqGP3k39kwBs8go0Qr-gGELDZNn87a9qagK2OBQ"></div></div>
+
+
+	<div class="bloc3 blockgrid"><p class="titreVelos3">Velos tout terrain 1000$</p><div class="containerTof"><img class="imggrid" src="http://www.motardsenbalade.net/IMG/jpg/Bultaco.jpg"> <p class="nameImg"></p></div>
+		</div>
+
+
+
+	<div class="bloc4 blockgrid"><p class="titreVelos4">Velos sport 1500$</p><div class="containerTof"><img class="imggrid" src="https://www.bikester.fr/fileadmin/mediapool/bkfr/velos.jpg"><p class="nameImg"></p></div>
+		</div>
+
+
+
+	<div class="bloc5 blockgrid"><p class="titreVelos5">Velos tantem 1000$</p><div class="containerTof"><img class="imggrid" src="http://i.f1g.fr/media/ext/805x453/www.lefigaro.fr/medias/2015/01/20/PHOc9f7c778-9ffa-11e4-a795-df15680fcbfa-805x453.jpg"><p class="nameImg"></p></div>
+		</div>
+
+
+
+	<div class="bloc6 blockgrid"><p class="titreVelos5">Velos pignons 1230$</p><div class="containerTof"><img class="imggrid" src="http://img.over-blog.com/600x400/5/67/26/92/velo-magasin/velo-magasin-2932.jpg"> <p class="nameImg"></p></div></div>
+		</div>
+
+
+<div class="footer">
+
+<div class="Information">
+<h2 class="titreFooter">Information</h2>
+<br><br><br>
+<p>Contact</p>
+<br><br><br>
+<p>Mention légale</p>
+<br><br><br>
+<p>Condition d'utilisation</p>
+<br><br><br>
+<p>A propos</p>
 </div>
 
-<div class="containerBody">
-
-  <img class="logo logo-biketrippers" src="http://www.cc-paysdesherbiers.fr/medias/2015/11/logo-r-velo.png">
-  <h1 class="velotority animated  lightSpeedIn">Velotority<br>Leader du pignons</h1>
-
-</div>
-
-<div class="Menu">
-
-  <ul class="menu cf">
-    <li><a href="">Menu item</a>
-     <ul class="submenu">
-      <li><a href="">Submenu item</a></li>
-      <li><a href="">Submenu item</a></li>
-      <li><a href="">Submenu item</a></li>
-      <li><a href="">Submenu item</a></li>
-    </ul> 
-  </li>    
-  <li>
-
-    <a href="">Menu item</a>
-    <ul class="submenu">
-      <li><a href="">Submenu item</a></li>
-      <li><a href="">Submenu item</a></li>
-      <li><a href="">Submenu item</a></li>
-      <li><a href="">Submenu item</a></li>
-    </ul>     
-  </li>
-
-  <div class="carousel"
-  data-flickity='{ "wrapAround": true }'>
-  <div class="carousel-cell imgCarou"></div>
-  <div class="carousel-cell imgCarou1"></div>
-  <div class="carousel-cell imgCarou2"></div>
-  <div class="carousel-cell imgCarou3"></div>
-  <div class="carousel-cell imgCarou4"></div>
+<div class="infos">
+<h2 class="titreFooter">Nos Infos</h2>
+<br><br><br>
+<p>Adresse : 2 rue du Liban </p>
+<br><br><br>
+<p>Code Postale : 92 210</p>
+<br><br><br>
+<p>E-mail : Velo-tority@gmail.com</p>
+<br><br><br>
+<p>Téléphone : 06 06 06 06 06</p>
 </div>
 
 
-<div class="Categorie">
-  <p class="txtCategorie">CATEGORIES</p>
-</div>
-<div class="SsCategorie">
-  <ul>
-    <li><a href="#">Vélos complet</li></a><br>
-    <li><a href="#">Roues</li></a><br>
-    <li><a href="#">Piéces détachées</li></a><br>
-    <li><a href="#">Kit de piece</li></a><br>
-  </ul>
-</div>
-</div>
-
-
-<div class="Carts">
-  <p class="txtCarts">CARTS</p>
-</div>
-<div class="deplacementBlock">
-  <div class="SsCarts">
-    <p class="txtSsCarts">Nos Produits</p><br>
-    <div class="SHIPPING">Shipping 0,00$</div><br>
-    <div class="TOTAL">TOTAL 0,00$</div><br>
-
-    <div class="btn">
-      <button>CARTS</button>
-    </div>
-
-    <div class="btn-2">
-      <button>CHECK OUT</button>
-    </div>
-
-  </div>
+<div class="Produits">
+<h2 class="titreFooter">Nos offres</h2>
+<br><br><br>
+<p>Nouveautés</p>
+<br><br>
+<p>Meilleurs ventes</p>
+<br><br>
+<p>Promotion</p>
+<br><br>
+<p>Fournisseurs</p>
+<br><br>
+<p>Fabricants</p>
 </div>
 
 
-    <div class="grid">
-
-      <div class="bloc1 blockgrid"> <p class="titreVelos"></p><div class="containerTof"><img src="http://blog.velib.paris.fr/wp-content/uploads/cache/583x380/109668_preview-bt1.jpg"> <p class="nameImg"></p></div>
-    </div>
-
-
-    <div class="bloc2 blockgrid"><p class="titreFilm"><span class="DeuxTxt"></span></p><div class="containerTof"><img src=""></div></div>
-
-
-    <div class="bloc3 blockgrid"><p class="titreFilm"></p><div class="containerTof"><img src=""> <p class="nameImg"></p></div>
-  </div>
-
-  <div class="bloc4 blockgrid"><div class="containerTof"><img src=""><p class="nameImg"></p></div>
-</div>
-
-
-<div class="bloc5 blockgrid"><div class="containerTof"><img src=""><p class="nameImg"></p></div>
-</div>
-
-<div class="bloc6 blockgrid"><div class="containerTof"><img src=""> <p class="nameImg"></p></div></div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="bidon">STROD?NJEHRLKDKSQ</div>
-</div>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
