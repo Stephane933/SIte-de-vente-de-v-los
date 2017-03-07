@@ -1,0 +1,397 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+	background-color: #ECECEC;
+}
+
+.containHeader{
+	width: 100%;
+	height: 40px;
+	background-color: #FFFFFF;
+
+}
+
+.txtHeader{
+	position: absolute;
+	margin-left: 34px;
+	font-family: 'Roboto Slab', serif;
+	margin-top: 12px;
+}
+
+.imgLangue{
+	width: 40px;
+	height: 40px;
+	margin-left: 45%;
+	
+}
+
+.imgLangue2{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin-left: 50%;
+	margin-top: -44px;
+	
+}
+
+/************************MENU************************/
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Main level */
+.menu {			
+	margin: 50px auto;
+	width: 800px;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;	
+}
+
+.menu > li {
+	background: #34495e;
+	float: left;
+	position: relative;
+	transform: skewX(25deg);
+}
+
+.menu a {
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, Helvetica;
+	font-size: 14px;
+}		
+
+.menu li:hover {
+	background: #e74c3c;
+}		
+
+.menu > li > a {
+	transform: skewX(-25deg);
+	padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+	position: absolute;
+	width: 200px;
+	left: 50%; margin-left: -100px;
+	transform: skewX(-25deg);
+	transform-origin: left top;
+}
+
+.submenu li {
+	background-color: #34495e;
+	position: relative;
+	overflow: hidden;		
+}						
+
+.submenu > li > a {
+	padding: 1em 2em;			
+}
+
+.submenu > li::after {
+	content: '';
+	position: absolute;
+	top: -125%;
+	height: 100%;
+	width: 100%;			
+	box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+	transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+	transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+	right: -50%;
+	transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+	transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+	transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+	left: -50%;
+	transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+	opacity: 0;
+	visibility: hidden;			
+}
+
+.submenu li {
+	transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+	opacity: 1;
+	visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+	transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+	transform: skewX(-25deg) translateX(-15px);			
+}
+
+
+*{ box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+	
+	background: #EEE;
+	margin-top: 230px;
+	width: 1000px;
+	margin-left: -695px
+}
+
+.carousel-cell {
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	margin-right: 10px;
+	background: #8C8;
+	border-radius: 5px;
+	counter-increment: carousel-cell;
+	background-size: cover;
+	background-position: center;
+}
+
+.imgCarou{
+	background-image: url("http://www.resortvillarosa.it/img/top/sport1.jpg");
+}
+
+.imgCarou1{
+	background-image: url("http://www.sport-egger.com/media/mod_jmslideshow/1300x600_fit_Bike-und-Mountainbike-im-Gasteinertal,-Egger-Sport-in-Dorfgastein2.jpg");
+}
+
+.imgCarou2{
+	background-image: url("https://www.finistere.fr/var/finistere/storage/images/mediatheque/services/sport/images/vtt-au-menez-hom/323545-1-fre-FR/VTT-au-Menez-Hom_full.png");
+}
+
+.imgCarou3{
+	background-image: url("http://www.sport-nature.net/medias/images/rando-vtt-300-2.png");
+}
+
+.imgCarou4{
+	background-image: url("http://www.orientation-nature.com/userfile/image/Capture_decran_2013-03-27_a_20.47.53.png");
+}
+
+.txtCategorie{
+	color: white;
+	margin-left: 70px;
+	padding-top: 24px;
+	padding-left: -10px;
+	position: absolute;
+}
+
+.Categorie{
+	position: absolute;
+	width: 240px;
+	height: 70px;
+	background-color: black;
+	margin-left: -730px;
+	margin-top: 20px;
+
+}
+
+.SsCategorie{
+	position: absolute;
+	background-color: black;
+	width: 220px;
+	height: 150px;
+	padding-left: 25px;
+	padding-top: 5px;
+	margin-left: -720px;
+	margin-top: 100px;
+	border: solid 2px grey;
+	padding-top: 15px;
+
+
+}
+
+.Carts{
+	position: absolute;
+	background-color: black;
+	margin-top: 500px;
+	margin-left: 980px;
+	width: 240px;
+	height: 70px;
+
+}
+
+.txtCarts{
+	color: white;
+	margin-left: 90px;
+	padding-top: 24px;
+	padding-left: -10px;
+	position: absolute;
+
+}
+
+
+.deplacementBlock{
+	margin-top: 580px;
+	margin-left: 1000px;
+	background-color: black;
+	color: white;
+	width: 200px;
+	height: 147px;
+	padding-left: 20px;
+	padding-top: 20px;
+	border: solid 2px grey;
+
+}
+
+.btn{
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 30px;
+	background: #000000;
+	background-image: -webkit-linear-gradient(top, #000000, #ffffff);
+	background-image: -moz-linear-gradient(top, #000000, #ffffff);
+	background-image: -ms-linear-gradient(top, #000000, #ffffff);
+	background-image: -o-linear-gradient(top, #000000, #ffffff);
+	background-image: linear-gradient(to bottom, #000000, #ffffff);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Georgia;
+	color: #ffffff;
+	font-size: 15px;
+	padding: 11px 19px 11px 18px;
+	text-decoration: none
+	
+
+}
+
+.btn:hover {
+	background: #1a2024;
+	background-image: -webkit-linear-gradient(top, #1a2024, #e80e0e);
+	background-image: -moz-linear-gradient(top, #1a2024, #e80e0e);
+	background-image: -ms-linear-gradient(top, #1a2024, #e80e0e);
+	background-image: -o-linear-gradient(top, #1a2024, #e80e0e);
+	background-image: linear-gradient(to bottom, #1a2024, #e80e0e);
+	text-decoration: none;
+}
+
+button{
+	background: none;
+	background-color: none;
+	border: none;
+	color: white;
+	
+}
+
+.btn-2{
+	position: absolute;
+	margin-left: -40px;
+	margin-top: 30px;
+	background: #000000;
+	background-image: -webkit-linear-gradient(top, #000000, #ffffff);
+	background-image: -moz-linear-gradient(top, #000000, #ffffff);
+	background-image: -ms-linear-gradient(top, #000000, #ffffff);
+	background-image: -o-linear-gradient(top, #000000, #ffffff);
+	background-image: linear-gradient(to bottom, #000000, #ffffff);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Georgia;
+	color: #ffffff;
+	font-size: 15px;
+	padding: 11px 19px 11px 18px;
+	text-decoration: none
+	
+
+}
+
+.btn-2:hover {
+	background: #1a2024;
+	background-image: -webkit-linear-gradient(top, #1a2024, #e80e0e);
+	background-image: -moz-linear-gradient(top, #1a2024, #e80e0e);
+	background-image: -ms-linear-gradient(top, #1a2024, #e80e0e);
+	background-image: -o-linear-gradient(top, #1a2024, #e80e0e);
+	background-image: linear-gradient(to bottom, #1a2024, #e80e0e);
+	text-decoration: none;
+}
+
+.grid{
+	position: absolute;
+	background-color: #EEEEE8;
+	width: 850px;
+	height: 700px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	margin-left: 220px;
+	margin-top: 100px;
+}
+
+.blockgrid{
+
+	width: 200px;
+	height: 250px;
+	margin-left: 6.5%;
+	margin-right: 20px;
+	margin-top: 3%;
+	border: solid 2px black;
+}
